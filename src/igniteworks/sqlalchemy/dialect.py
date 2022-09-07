@@ -88,6 +88,7 @@ def _create_column_info(row):
 
 class IgniteDialect(DefaultDialect, ABC):
     name = 'igniteworks'
+    driver = 'igniteworks'
 
     def __init__(self, *args, **kwargs):
         super(IgniteDialect, self).__init__(*args, **kwargs)
